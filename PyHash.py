@@ -38,8 +38,7 @@ def md5():
     hash = raw_input("      Enter Text: ")
     print "\033[1;m"
     hash = hashlib.md5(hash)
-    print (hash.hexdigest())
-    exit()
+    return hash.hexdigest()
 
 
 def sha1():
@@ -50,8 +49,7 @@ def sha1():
     sha1 = raw_input("      Enter Text: ")
     print "\033[1;m"
     hash = hashlib.sha1(sha1)
-    print (hash.hexdigest())
-    exit()
+    return hash.hexdigest()
 
 
 def sha224():
@@ -62,8 +60,7 @@ def sha224():
     sha224 = raw_input("     Enter Text: ")
     print "\033[1;m"
     hash = hashlib.sha224(sha224)
-    print (hash.hexdigest())
-    exit()
+    return hash.hexdigest()
 
 
 def sha256():
@@ -74,17 +71,18 @@ def sha256():
     sha256 = raw_input("     Enter Text: ")
     print "\033[1;m"
     hash = hashlib.sha256(sha256)
-    print (hash.hexdigest())
-    exit()
+    return hash.hexdigest()
 
 
 def sha384():
+    check.plat()
+    access.Hash()
+    access.description()
     print "\033[1;32m"
     sha384 = raw_input("     Enter Text: ")
     print "\033[1;m"
     hash = hashlib.sha384(sha384)
-    print (hash.hexdigest())
-    exit()
+    return hash.hexdigest()
 
 
 def sha512():
@@ -95,8 +93,7 @@ def sha512():
     sha512 = raw_input("     Enter Text: ")
     print "\033[1;m"
     hash = hashlib.sha512(sha512)
-    print (hash.hexdigest())
-    exit()
+    return hash.hexdigest()
 
 
 
